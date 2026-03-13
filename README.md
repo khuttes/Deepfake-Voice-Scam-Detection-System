@@ -1,6 +1,12 @@
 # Deepfake Voice Scam Detection System
+#For Full Project Contract :
++8801773743025
+ihasib199@gmail.com
+https://github.com/khuttes
+https://khuttes.github.io/Helpyard/
 
 ## Project Overview
+<img src="project.png" alt="Girl in a jacket" width="500" height="600">
 
 This project aims to develop a comprehensive system for detecting deepfake voices and identifying common scam patterns in call audio. The system will analyze audio for synthetic characteristics, recognize scam tactics, and provide confidence scores along with clear indicators of manipulation or scam likelihood.
 
