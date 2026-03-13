@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepfake Voice Scam Detector</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Deepfake Voice Scam Detector</h1>
+    </header>
+
+    <main>
+        <section class="upload-section card">
+            <h2>Upload Audio for Analysis</h2>
+            <div class="upload-area">
+                <input type="file" id="audioUpload" accept="audio/*" hidden>
+                <label for="audioUpload" class="upload-button">Choose Audio File</label>
+                <span id="fileName">No file chosen</span>
+                <p>Accepted formats: MP3, WAV, FLAC</p>
+            </div>
+            <button id="analyzeButton" class="primary-button" disabled>Analyze Audio</button>
+        </section>
+
+        <section class="results-section card" style="display:none;">
+            <h2>Analysis Results</h2>
+            <div id="loadingIndicator" class="loading" style="display:none;">
+                <div class="spinner"></div>
+                <p>Analyzing audio, please wait...</p>
+            </div>
+            <div id="analysisResults" class="results-content" style="display:none;">
+                <h3>Voice Authenticity: <span id="voiceAuthenticityScore">--</span></h3>
+                <p id="voiceAuthenticityDetails">Details will appear here.</p>
+
+                <h3>Scam Pattern Recognition: <span id="scamPatternScore">--</span></h3>
+                <p id="scamPatternDetails">Details will appear here.</p>
+
+                <h3>Overall Confidence: <span id="overallConfidenceScore">--</span></h3>
+                <p id="overallConfidenceMessage">This audio appears to be...</p>
+
+                <div class="recommendations">
+                    <h4>Recommendations:</h4>
+                    <ul id="recommendationList">
+                        <!-- Recommendations will be added here by JS -->
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Deepfake Voice Scam Detection System</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
